@@ -1,0 +1,368 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-patron-textura-fibra-carbono-negro_1017-33436.jpg?semt=ais_hybrid&w=740);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+.section-content {
+  max-width:950px;
+  margin: 200px 600px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  text-shadow: 
+    -4px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerTexto 2s ease-out forwards;
+}
+@keyframes aparecerTexto {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*.computer-image {
+  height: 80%;
+  opacity: 0;
+ 	margin: -38% 50%;
+}*/
+
+.section-content2 {
+  position: relative;
+  width: 700px;
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+  margin: 200px;
+  text-shadow: 
+    -4px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerTexto 2s ease-out forwards;
+}
+.tecnico {
+  position: absolute;
+  bottom: 0;
+  right: 40%; /* O ajusta como necesites */
+  width: 80%;
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 1s;
+  z-index: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+#inicio {
+  background-image: url('https://www.abasteo.mx/out/productdescription/iframe/AORUS/GA-Z270X-GAMING%209/index_files/G9_gif_02_fix.gif');
+  background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat; /* No se repite la imagen */
+  background-position: center;  /* Centra la imagen */
+  color: white;
+}
+
+#nosotros {
+  position: relative;
+  background-image: url(https://blogs.nvidia.com/wp-content/uploads/2022/12/auto-enterprise-images-drive-sim-replicator-2444552-1920x1080-r6.gif);
+  background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat; /* No se repite la imagen */
+  background-position: center;  /* Centra la imagen */
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 200px; /* Ejemplo más controlado */
+  overflow: hidden;
+}
+
+#servicios {
+  position: relative;
+  background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG1kYnJtOWt1dm9jaGZheW1vbnBjaDNqYTB0MDk5dG4waDdlMzYzOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EC5kEeJ4qz8ipD1S4R/giphy.gif);
+  background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat; /* No se repite la imagen */
+  background-position: center;  /* Centra la imagen */
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 100px; /* Ejemplo más controlado */
+  overflow: hidden;
+}
+.section-content3{
+  position: relative;
+  width: 500px;
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+  margin: 200px;
+  text-shadow: 
+    -4px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerTexto 2s ease-out forwards;
+}
+#contacto {
+  position: relative;
+  background-image: url(https://ultimainformatica.com/img/cms/TIENDAS/TIENDA%20DE%20INFORMATICA%20ULTIMA%20SANTA%20CRUZ%20DE%20TENERIFE-1.jpg);
+  background-size: cover;       /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat; /* No se repite la imagen */
+  background-position: center;  /* Centra la imagen */
+  color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 200px; /* Ejemplo más controlado */
+  overflow: hidden;
+  padding: 80px 80px;
+}
+.section-content4{
+  position: absolute;
+  top: 50px;   /* distancia desde arriba */
+  left: 980px; /* distancia desde la izquierda */
+  width: 500px;
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+  margin: 200px;
+  text-shadow: 
+    -4px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerTexto 2s ease-out forwards;
+}
+}
+
+.spacer {
+  height: 60px;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	padding: 0;
+	}
+.logo img{
+	height: 80px;
+	align-items: center;
+	filter: drop-shadow(0 0 20px white)
+	}
+.carrusel {
+  position: relative;
+  max-width: 50%;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+.carrusel-contenido {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  color: white;
+}
+
+.slide {
+  min-width: 90%;
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.slide img {
+  width: 90%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide p {
+  margin-top: 15px;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.carrusel-btn.prev {
+  left: 10px;
+}
+
+.carrusel-btn.next {
+  right: 10px;
+}
+
+.carrusel-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.redes-sociales {
+  position: absolute;
+  top: 300px;   /* distancia desde arriba */
+  left: 750px; /* distancia desde la izquierda */
+}
+
+.redes-sociales ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.redes-sociales li a {
+  background-color: #333;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.redes-sociales li a:hover {
+  background-color: #555;
+}
+h3{
+  width: 400px;
+  font-size: 35px;
+  text-shadow: 
+    -4px -1px 0 black, 
+     1px -1px 0 black, 
+    -1px  1px 0 black, 
+     1px  1px 0 black;
+}
+.mapa-container{
+  position: absolute;
+  top: 300px;   /* distancia desde arriba */
+  left: 70px; /* distancia desde la izquierda */
+}
+
+
+#contacto {
+  background-color: #f2f2f2;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.formulario-contacto {
+  position: absolute;
+  top: 500px;   /* distancia desde arriba */
+  left: 1300px; /* distancia desde la izquierda */
+  flex-direction: column;
+  gap: 15px;
+  max-width: 270px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario-contacto button {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #555;
+}
